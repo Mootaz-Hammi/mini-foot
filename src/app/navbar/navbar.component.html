@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand " href="#">
+        <img src="assets/minifoot.jpg" alt="" width="40" height="40" class="d-inline-block align-top mr-2">
+        
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mr-2 col-10">
+          <a class="nav-item nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
+          <a class="nav-item nav-link" routerLink="training" routerLinkActive="active">Training</a>
+          <a class="nav-item nav-link" routerLink="elite" routerLinkActive="active">Elites</a>
+          <a class="nav-item nav-link " routerLink="events" routerLinkActive="active">Events</a>
+        </div>
+        <div class="text-right col-2">
+        <button class="btn btn-success text-right" routerLink="register">Sign up</button>
+        <button class="btn btn-primary text-right" routerLink="login">Sign in</button>
+        </div>
+      </div>
+    </div>
+  </nav>

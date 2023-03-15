@@ -13,6 +13,8 @@ import { EventsComponent } from './components/events/events.component';
 import { EliteComponent } from './components/elite/elite.component';
 import { LoginComponent } from './components/login/login.component';
 import { StarterComponent } from './components/starter/starter.component';
+import { Register2Component } from './components/register2/register2.component';
+import { Login2Component } from './components/login2/login2.component';
 
 
 
@@ -28,7 +30,9 @@ import { StarterComponent } from './components/starter/starter.component';
     EventsComponent,
     EliteComponent,
     LoginComponent,
-    StarterComponent
+    StarterComponent,
+    Register2Component,
+    Login2Component
   ],
   imports: [
     BrowserModule,

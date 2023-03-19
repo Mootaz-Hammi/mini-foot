@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { Routing } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { FormsModule } from '@angular/forms';
+import { FormGroup, FormsModule } from '@angular/forms';
 import { RegisterComponent } from './components/register/register.component';
 import { HomeComponent } from './components/home/home.component';
 import { TrainingComponent } from './components/training/training.component';
@@ -37,7 +37,9 @@ import { Login2Component } from './components/login2/login2.component';
   imports: [
     BrowserModule,
     FormsModule,
-    Routing
+    Routing,
+    ReactiveFormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

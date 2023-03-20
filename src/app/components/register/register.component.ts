@@ -12,6 +12,8 @@ export class RegisterComponent {
   url="assets/add.png"
   fn=""
   text=""
+
+  categories: string[] = ['ecole', 'minime', 'cadet', 'junior'];
   
 
   myForm:FormGroup;
@@ -26,6 +28,7 @@ export class RegisterComponent {
       email:new FormControl('')
     })
   }
+  
 
   selectFile(event:any){
     if(event.target.files){
@@ -34,8 +37,26 @@ export class RegisterComponent {
       reader.onload = (event:any) => {
         this.url = event.target.result
       }
-
     }
+  }
+  sayhi()
+  {
+    this.url="assets/add.png"
+  }
+  onFilePickerClick() {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = 'image/*';
+    input.addEventListener('change', (event: any) => {
+      const file: File = event.target.files[0];
+
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => {
+        this.url = reader.result as string;
+      };
+    });
+    input.click();
   }
 
   
